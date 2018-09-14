@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dem so lan xuat hien</title>
+</head>
+<body>
+       <script>
+           let input = parseInt(prompt("nhap mot so : "));
+           var nums = [];
+           for(let i=0;i<50;++i){
+               nums[i] = Math.floor(Math.random() * 101);
+               document.write(nums[i]+ " ") ;
+           }
+
+           let count = 0;
+           for (let m = 0; m<nums.length; m++) {
+               if (input == nums[m]) {
+                   count = count + 1;
+               }
+           } document.write(" so lan xuat hien cua so " +input+ " la " +count);
+
+
+       </script>
+</body>
+</html>
